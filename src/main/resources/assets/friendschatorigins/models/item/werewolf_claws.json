@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "friendschatorigins:item/werewolf_claws_2d"
+  }
+}
