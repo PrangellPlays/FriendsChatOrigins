@@ -1,0 +1,17 @@
+{
+  "type": "friendschatorigins:weapon_table",
+  "ingredients": [
+    {
+      "item": "friendschatorigins:weapon_upgrade_smithing_template"
+    },
+    {
+      "item": "minecraft:netherite_sword"
+    },
+    {
+      "item": "friendschatorigins:claws"
+    }
+  ],
+  "output": {
+    "item": "friendschatorigins:werewolf_claws"
+  }
+}

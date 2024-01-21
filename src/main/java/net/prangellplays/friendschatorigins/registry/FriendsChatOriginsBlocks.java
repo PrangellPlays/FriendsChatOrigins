@@ -21,8 +21,8 @@ import net.prangellplays.friendschatorigins.block.WeaponTableBlock;
 
 public class FriendsChatOriginsBlocks {
 
-    public static final Block WEAPON_TABLE = registerBlock("weapon_table",
-            new WeaponTableBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()), ItemGroups.FUNCTIONAL);
+  //  public static final Block WEAPON_TABLE = registerBlock("weapon_table",
+    //        new WeaponTableBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)), ItemGroups.FUNCTIONAL);
 
 
         private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {

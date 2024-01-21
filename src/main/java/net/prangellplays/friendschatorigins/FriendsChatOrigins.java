@@ -3,6 +3,7 @@ package net.prangellplays.friendschatorigins;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
+import net.prangellplays.friendschatorigins.recipe.FriendsChatOriginsRecipe;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsBlockEntities;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsBlocks;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsItems;
@@ -23,6 +24,7 @@ public class FriendsChatOrigins implements ModInitializer {
 		FriendsChatOriginsHandlers.registerScreenHandler();
 		FriendsChatOriginsBlockEntities.registerBlockEntities();
 		FriendsChatOriginsBlocks.registerFriendsChatOriginsBlocks();
+		FriendsChatOriginsRecipe.registerRecipes();
 	}
 	public static Identifier id(String path) {
 		return new Identifier(MOD_ID, path);

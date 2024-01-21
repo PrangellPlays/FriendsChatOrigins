@@ -17,19 +17,21 @@ public class WeaponTableScreenHandler extends ScreenHandler {
 
     public WeaponTableScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(2));
+                new ArrayPropertyDelegate(4));
     }
 
     public WeaponTableScreenHandler(int syncId, PlayerInventory playerInventory,
                                     BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(FriendsChatOriginsHandlers.WEAPON_TABLE_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) blockEntity), 2);
+        checkSize(((Inventory) blockEntity), 4);
         this.inventory = ((Inventory) blockEntity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
 
         this.addSlot(new Slot(inventory, 0, 80, 11));
-        this.addSlot(new Slot(inventory, 1, 80, 59));
+        this.addSlot(new Slot(inventory, 1, 59, 11));
+        this.addSlot(new Slot(inventory, 2, 101, 11));
+        this.addSlot(new Slot(inventory, 3, 80, 59));
 
 
         addPlayerInventory(playerInventory);

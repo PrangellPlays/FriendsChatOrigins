@@ -6,7 +6,9 @@
 		"FriendsChatOriginsMixin",
 		"ItemRendererAccessor",
 		"ItemRendererMixin",
-		"ModelLoaderMixin"
+		"ModelLoaderMixin",
+		"PlayerEntityMixin",
+		"DamageTypesMixin"
 	],
 	"client": [
 

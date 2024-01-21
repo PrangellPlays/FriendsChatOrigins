@@ -8,7 +8,8 @@ import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsItems;
 import java.util.function.Supplier;
 
 public enum FriendsChatOriginsToolMaterials implements ToolMaterial {
-    WEREWOLF(5, 0, 6.5f, 0f, 26,() -> Ingredient.ofItems(Items.AIR));
+    WEREWOLF(5, 0, 6.5f, 0f, 26,() -> Ingredient.ofItems(Items.AIR)),
+    MYTHICAL(5, 0, 6.5f, 0f, 26,() -> Ingredient.ofItems(Items.AIR));
 
     private final int miningLevel;
     private final int itemDurability;

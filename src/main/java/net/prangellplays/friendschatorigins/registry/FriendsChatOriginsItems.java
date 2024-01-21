@@ -10,13 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.prangellplays.friendschatorigins.FriendsChatOrigins;
-import net.prangellplays.friendschatorigins.item.FriendsChatOriginsToolMaterials;
-import net.prangellplays.friendschatorigins.item.WeaponUpgradeSmithingTemplateItem;
-import net.prangellplays.friendschatorigins.item.WerewolfClawsItem;
+import net.prangellplays.friendschatorigins.item.*;
 
 public class FriendsChatOriginsItems {
     public static final Item WEAPON_UPGRADE_SMITHING_TEMPLATE = registerItem("weapon_upgrade_smithing_template", new WeaponUpgradeSmithingTemplateItem(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
     public static final Item WEREWOLF_CLAWS = registerItem("werewolf_claws", new WerewolfClawsItem(FriendsChatOriginsToolMaterials.WEREWOLF, 12, -2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item PLASMYTHIC_BLADE = registerItem("plasmythic_blade", new PlasmythicBladeItem(FriendsChatOriginsToolMaterials.MYTHICAL, 11, -2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
     public static final Item CLAWS = registerItem("claws", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
     private static void addItemsToBuildingItemGroup(FabricItemGroupEntries entries){
@@ -33,6 +32,7 @@ public class FriendsChatOriginsItems {
     }
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
         entries.add(WEREWOLF_CLAWS);
+        entries.add(PLASMYTHIC_BLADE);
     }
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
     }
