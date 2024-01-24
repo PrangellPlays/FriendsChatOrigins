@@ -8,16 +8,16 @@ import net.minecraft.util.Identifier;
 import net.prangellplays.friendschatorigins.FriendsChatOrigins;
 
 public class FriendsChatOriginsParticles {
+    public static final DefaultParticleType CODE_PARTICLE = FabricParticleTypes.simple();
     public static final DefaultParticleType CPV2_PARTICLE = FabricParticleTypes.simple();
     public static final DefaultParticleType DEEP_CUTS_PARTICLE = FabricParticleTypes.simple();
-    public static final DefaultParticleType CODE_PARTICLE = FabricParticleTypes.simple();
 
     public static void registerParticles() {
+        Registry.register(Registries.PARTICLE_TYPE, new Identifier(FriendsChatOrigins.MOD_ID, "code_particle"),
+                CODE_PARTICLE);
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(FriendsChatOrigins.MOD_ID, "cpv2_particle"),
                 CPV2_PARTICLE);
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(FriendsChatOrigins.MOD_ID, "deep_cuts_particle"),
                 DEEP_CUTS_PARTICLE);
-        Registry.register(Registries.PARTICLE_TYPE, new Identifier(FriendsChatOrigins.MOD_ID, "code_particle"),
-                CODE_PARTICLE);
     }
 }

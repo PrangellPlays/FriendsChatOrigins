@@ -2,13 +2,16 @@ package net.prangellplays.friendschatorigins;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.util.Identifier;
 import net.prangellplays.friendschatorigins.callbacks.FriendsChatOriginsCallbacks;
 import net.prangellplays.friendschatorigins.effect.FriendsChatOriginsEffects;
+import net.prangellplays.friendschatorigins.entity.CodeEntity;
 import net.prangellplays.friendschatorigins.particle.FriendsChatOriginsParticles;
 import net.prangellplays.friendschatorigins.recipe.FriendsChatOriginsRecipe;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsBlockEntities;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsBlocks;
+import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsEntity;
 import net.prangellplays.friendschatorigins.registry.FriendsChatOriginsItems;
 import net.prangellplays.friendschatorigins.screen.FriendsChatOriginsHandlers;
 import net.prangellplays.friendschatorigins.util.FriendsChatOriginsLootTableModifiers;
@@ -31,6 +34,8 @@ public class FriendsChatOrigins implements ModInitializer {
 		FriendsChatOriginsCallbacks.registerCallbacks();
 		FriendsChatOriginsEffects.registerEffects();
 		FriendsChatOriginsParticles.registerParticles();
+		FriendsChatOriginsEntity.registerModEntities();
+		FabricDefaultAttributeRegistry.register(FriendsChatOriginsEntity.CODE_ENTITY, CodeEntity.createCodeEntityAttributes());
 	}
 	public static Identifier id(String path) {
 		return new Identifier(MOD_ID, path);

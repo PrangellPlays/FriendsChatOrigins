@@ -9,10 +9,14 @@ import net.prangellplays.friendschatorigins.FriendsChatOrigins;
 
 public class FriendsChatOriginsEffects {
 
+    public static StatusEffect CODE;
     public static StatusEffect CPV2;
     public static StatusEffect DEEP_CUTS;
-    public static StatusEffect CODE;
 
+    public static StatusEffect registerCODEEffect(String name){
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(FriendsChatOrigins.MOD_ID, name),
+                new CodeEffect(StatusEffectCategory.BENEFICIAL, 1476624));
+    }
     public static StatusEffect registerCPV2Effect(String name){
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(FriendsChatOrigins.MOD_ID, name),
                 new CPV2Effect(StatusEffectCategory.BENEFICIAL, 1476624));
@@ -21,15 +25,11 @@ public class FriendsChatOriginsEffects {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(FriendsChatOrigins.MOD_ID, name),
                 new DeepCutsEffect(StatusEffectCategory.BENEFICIAL, 13500416));
     }
-    public static StatusEffect registerCODEEffect(String name){
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(FriendsChatOrigins.MOD_ID, name),
-                new CodeEffect(StatusEffectCategory.BENEFICIAL, 1476624));
-    }
 
     public static void registerEffects(){
+        CODE = registerCODEEffect("code");
         CPV2 = registerCPV2Effect("cpv2");
         DEEP_CUTS = registerDEEPCUTSEffect("deep_cuts");
-        CODE = registerCODEEffect("code");
     }
 
 }

@@ -9,9 +9,9 @@
 		"ModelLoaderMixin",
 		"PlayerEntityMixin",
 		"DamageTypesMixin",
+		"EffectParticles.CODEParticleForCODEEffect",
 		"EffectParticles.CPV2ParticleForCPV2Effect",
-		"EffectParticles.DEEPCUTSParticleForDEEPCUTSEffect",
-		"EffectParticles.CODEParticleForCODEEffect"
+		"EffectParticles.DEEPCUTSParticleForDEEPCUTSEffect"
 	],
 	"client": [
 

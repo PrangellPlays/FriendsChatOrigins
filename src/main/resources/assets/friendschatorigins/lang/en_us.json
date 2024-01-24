@@ -1,11 +1,14 @@
 {
   "item.friendschatorigins.code_blade": "§2Code Blade",
+  "item.friendschatorigins.code_entity_code_blade": "§2Code Blade",
   "item.friendschatorigins.cpv2": "§2CPV2",
   "item.friendschatorigins.weapon_upgrade_smithing_template": "§fSmithing Template",
   "item.friendschatorigins.werewolf_claws": "§7Werewolf Claw",
   "item.friendschatorigins.claws": "Claws",
 
-  "effect.friendschatorigins.cpv2": "CPV2",
-  "effect.friendschatorigins.code": "C0D3",
-  "effect.friendschatorigins.deep_cuts": "Deep Cuts"
+  "entity.friendschatorigins.code_entity": "§2Code Entity",
+
+  "effect.friendschatorigins.cpv2": "§2CPV2",
+  "effect.friendschatorigins.code": "§2C0D3",
+  "effect.friendschatorigins.deep_cuts": "§4Deep Cuts"
 }

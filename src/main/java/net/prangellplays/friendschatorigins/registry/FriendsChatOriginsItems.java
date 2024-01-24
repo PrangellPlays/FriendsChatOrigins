@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.prangellplays.friendschatorigins.FriendsChatOrigins;
 import net.prangellplays.friendschatorigins.item.*;
+import net.prangellplays.friendschatorigins.item.EntityWeapons.CodeEntityCodeBlade;
 import net.prangellplays.friendschatorigins.item.PrangellPlays.CPV2Item;
 import net.prangellplays.friendschatorigins.item.PrangellPlays.CodeBladeItem;
 import net.prangellplays.friendschatorigins.item.Skynovic.WerewolfClawsItem;
@@ -19,6 +20,7 @@ public class FriendsChatOriginsItems {
     public static final Item WEAPON_UPGRADE_SMITHING_TEMPLATE = registerItem("weapon_upgrade_smithing_template", new WeaponUpgradeSmithingTemplateItem(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
     public static final Item WEREWOLF_CLAWS = registerItem("werewolf_claws", new WerewolfClawsItem(FriendsChatOriginsToolMaterials.WEREWOLF, 12, -2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
     public static final Item CODE_BLADE = registerItem("code_blade", new CodeBladeItem(FriendsChatOriginsToolMaterials.CODE, 13, 2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item CODE_ENTITY_CODE_BLADE = registerItem("code_entity_code_blade", new CodeEntityCodeBlade(FriendsChatOriginsToolMaterials.CODE, 23, 4, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
     public static final Item CPV2 = registerItem("cpv2", new CPV2Item(new FabricItemSettings().maxDamage(0).maxCount(1).fireproof().rarity(Rarity.EPIC)));
     public static final Item CLAWS = registerItem("claws", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
