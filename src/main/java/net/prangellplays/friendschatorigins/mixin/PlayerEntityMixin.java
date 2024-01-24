@@ -16,7 +16,7 @@ public class PlayerEntityMixin {
     public DamageSource playerAttackProxy(DamageSources instance, PlayerEntity attacker) {
         var stack = attacker.getMainHandStack();
 
-        if (stack.isOf(FriendsChatOriginsItems.PLASMYTHIC_BLADE)) {
+        if (stack.isOf(FriendsChatOriginsItems.CODE_BLADE)) {
             return FriendsChatOriginsDamageSources.trueDamage(attacker);
         }
 

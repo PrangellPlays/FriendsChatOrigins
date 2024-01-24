@@ -1,4 +1,4 @@
-package net.prangellplays.friendschatorigins.item;
+package net.prangellplays.friendschatorigins.item.Skynovic;
 
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;

@@ -8,7 +8,10 @@
 		"ItemRendererMixin",
 		"ModelLoaderMixin",
 		"PlayerEntityMixin",
-		"DamageTypesMixin"
+		"DamageTypesMixin",
+		"EffectParticles.CPV2ParticleForCPV2Effect",
+		"EffectParticles.DEEPCUTSParticleForDEEPCUTSEffect",
+		"EffectParticles.CODEParticleForCODEEffect"
 	],
 	"client": [
 

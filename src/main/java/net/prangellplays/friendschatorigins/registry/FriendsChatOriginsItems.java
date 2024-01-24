@@ -11,11 +11,15 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.prangellplays.friendschatorigins.FriendsChatOrigins;
 import net.prangellplays.friendschatorigins.item.*;
+import net.prangellplays.friendschatorigins.item.PrangellPlays.CPV2Item;
+import net.prangellplays.friendschatorigins.item.PrangellPlays.CodeBladeItem;
+import net.prangellplays.friendschatorigins.item.Skynovic.WerewolfClawsItem;
 
 public class FriendsChatOriginsItems {
     public static final Item WEAPON_UPGRADE_SMITHING_TEMPLATE = registerItem("weapon_upgrade_smithing_template", new WeaponUpgradeSmithingTemplateItem(new FabricItemSettings().fireproof().rarity(Rarity.RARE)));
     public static final Item WEREWOLF_CLAWS = registerItem("werewolf_claws", new WerewolfClawsItem(FriendsChatOriginsToolMaterials.WEREWOLF, 12, -2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
-    public static final Item PLASMYTHIC_BLADE = registerItem("plasmythic_blade", new PlasmythicBladeItem(FriendsChatOriginsToolMaterials.MYTHICAL, 11, -2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item CODE_BLADE = registerItem("code_blade", new CodeBladeItem(FriendsChatOriginsToolMaterials.CODE, 13, 2, new FabricItemSettings().fireproof().rarity(Rarity.EPIC)));
+    public static final Item CPV2 = registerItem("cpv2", new CPV2Item(new FabricItemSettings().maxDamage(0).maxCount(1).fireproof().rarity(Rarity.EPIC)));
     public static final Item CLAWS = registerItem("claws", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
     private static void addItemsToBuildingItemGroup(FabricItemGroupEntries entries){
@@ -32,7 +36,8 @@ public class FriendsChatOriginsItems {
     }
     private static void addItemsToCombatItemGroup(FabricItemGroupEntries entries){
         entries.add(WEREWOLF_CLAWS);
-        entries.add(PLASMYTHIC_BLADE);
+        entries.add(CODE_BLADE);
+        entries.add(CPV2);
     }
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries){
     }
